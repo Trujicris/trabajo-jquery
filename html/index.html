@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+                $("#cuadro2").hide()
+              $("#desplazar").click(function(){
+               $("#cuadro2").show()
+              })
+                 $("#recoger").click(function () {
+                   $("#cuadro2").hide("#cuadro2")
+               }) 
+
+
+         
+        })
+    </script>
+
+</head>
+
+<body>
+    <article>
+
+        <div class="cuadro">
+
+            <p id="desplazar">+</p>
+            <p>login</p>
+        </div>
+
+    </article>
+
+
+    <article>
+
+        <div class="cuadro" id="cuadro2">
+
+            <form>
+
+                <p id="recoger">-</p>
+                <p class="abajo ">login</p>
+                <div>
+                    <p>nombre</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>contraseña </p>
+                    <input type="password" name="contraseña">
+                    <br>
+
+                </div>
+            </form>
+        </div>
+
+    </article>
+
+</body>
+
+</html>
